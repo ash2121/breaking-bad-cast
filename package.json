@@ -1,4 +1,4 @@
-{
+{  "homepage": "https://ash2121.github.io/breaking-bad-cast",
   "name": "breaking-bad-react-app",
   "version": "0.1.0",
   "private": true,
@@ -10,6 +10,8 @@
     "react-scripts": "5.0.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -34,6 +36,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^3.2.3",
     "web-vitals": "^2.1.4"
   }
 }
